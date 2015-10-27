@@ -10,11 +10,11 @@ angular.module('ForumTest.states', [])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: '/search',
+  .state('app.first', {
+    url: '/first',
     views: {
       'menuContent': {
-        templateUrl: 'templates/search.html'
+        templateUrl: 'templates/first.html'
       }
     }
   })
@@ -47,5 +47,5 @@ angular.module('ForumTest.states', [])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/first');
 });

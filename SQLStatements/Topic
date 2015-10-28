@@ -1,0 +1,10 @@
+# Create the user database table
+
+CREATE TABLE topic
+(
+	ID int NOT NULL AUTO_INCREMENT,
+	body varchar(255),
+	rating int,
+	user_ID int FOREIGN KEY REFERENCES user(user_ID) ON DELETE CASCADE,
+	PRIMARY KEY(ID)
+);

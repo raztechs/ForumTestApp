@@ -1,0 +1,11 @@
+# Create the profile database table
+
+CREATE TABLE profile
+(
+	ID int NOT NULL AUTO_INCREMENT,
+	name varchar(255),
+	nickname varchar(255),
+	rating int,
+	user_ID int FOREIGN KEY REFERENCES user(user_ID) ON DELETE CASCADE,
+	PRIMARY KEY(ID)
+);

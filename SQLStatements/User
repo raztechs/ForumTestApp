@@ -3,7 +3,7 @@
 
 CREATE TABLE user
 (
-	user_ID int NOT NULL,
+	user_ID int NOT NULL AUTO_INCREMENT,
 	username varchar(255),
 	password varchar(255),
 	PRIMARY KEY (user_ID)
